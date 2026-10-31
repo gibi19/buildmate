@@ -1,0 +1,1110 @@
+<!-- Top Executive Contact Bar -->
+<div class="bg-brand-navy border-b border-slate-800 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center space-x-4 rtl:space-x-reverse text-slate-300">
+            <span><i class="fas fa-map-marker-alt text-brand-gold mr-1.5"></i> <span data-i18n="address">Musaffah M-9, P.O. Box: 92464, Abu Dhabi - U.A.E</span></span>
+            <span class="hidden md:inline text-slate-600">|</span>
+            <span class="hidden md:inline"><i class="fas fa-shield-alt text-emerald-400 mr-1.5"></i> 100% Regulatory Compliant</span>
+        </div>
+        <div class="flex items-center space-x-4 rtl:space-x-reverse">
+            <a href="tel:+971502966054" class="text-brand-gold font-bold hover:underline flex items-center">
+                <i class="fas fa-phone-alt mr-1"></i> 050 296 6054
+            </a>
+            <span class="text-slate-600">|</span>
+            <span class="text-slate-300 font-medium" data-i18n="supervisor_label">Supervisor: Mansoor Ali</span>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navigation Header -->
+<header class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            
+            <!-- Logo & Brand Name -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-red to-brand-navy p-0.5 shadow-lg border border-brand-gold/40 flex items-center justify-center shrink-0">
+                    <div class="w-full h-full bg-brand-navy rounded-[10px] flex items-center justify-center">
+                        <i class="fas fa-building-shield text-brand-gold text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg sm:text-xl font-heading font-black tracking-wider text-white block leading-none">BUILD<span class="text-brand-red">MATE</span></span>
+                    <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-brand-gold font-semibold block mt-1">Facilities Management LLC</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden lg:flex items-center space-x-8 rtl:space-x-reverse">
+                <a href="#home" data-i18n="nav_home" class="text-sm font-semibold text-white hover:text-brand-gold transition-colors">Home</a>
+                <a href="#about" data-i18n="nav_about" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors">About Us</a>
+                <a href="#brochure" data-i18n="nav_brochure" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors"><i class="fas fa-file-pdf text-brand-red mr-1"></i> Brochure</a>
+                <a href="#services" data-i18n="nav_services" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors">Our Services</a>
+                <a href="#gallery" data-i18n="nav_gallery" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors">Gallery</a>
+                <a href="#hq-hub" data-i18n="nav_hq" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors">HQ Operations</a>
+                <a href="#contact" data-i18n="nav_contact" class="text-sm font-medium text-slate-300 hover:text-brand-gold transition-colors">Contact Card</a>
+            </nav>
+
+            <!-- Actions Header -->
+            <div class="flex items-center space-x-2 sm:space-x-4 rtl:space-x-reverse">
+                <button id="langBtn" onclick="toggleLanguage()" class="px-3 py-2 rounded-xl border border-brand-gold/40 bg-slate-900/80 text-xs font-semibold text-slate-200 hover:border-brand-gold hover:text-brand-gold transition-all min-h-[38px] flex items-center shadow-md">
+                    <i class="fas fa-globe mr-1.5 text-brand-gold text-xs"></i><span id="langText">العربية</span>
+                </button>
+                <a href="https://wa.me/971502966054?text=Hello%20BuildMate%20Team%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" data-i18n="enquire_btn" class="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2.5 rounded-xl coral-gradient text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-brand-red/30 hover:opacity-95 transition-all">
+                    Enquire Now
+                </a>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2.5 rounded-xl border border-slate-700 bg-slate-900/80 text-slate-200 hover:text-white active:bg-slate-800 min-w-[42px] min-h-[42px] flex items-center justify-center" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-b border-slate-800 bg-brand-navy/98 backdrop-blur-xl px-5 py-5 space-y-3.5 shadow-2xl">
+        <a href="#home" onclick="closeMobileMenu()" data-i18n="nav_home" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold">Home</a>
+        <a href="#about" onclick="closeMobileMenu()" data-i18n="nav_about" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold">About BuildMate</a>
+        <a href="#brochure" onclick="closeMobileMenu()" data-i18n="nav_brochure" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold"><i class="fas fa-file-pdf text-brand-red mr-1.5"></i> Executive Brochure</a>
+        <a href="#services" onclick="closeMobileMenu()" data-i18n="nav_services" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold">Services Breakdown</a>
+        <a href="#gallery" onclick="closeMobileMenu()" data-i18n="nav_gallery" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold">Gallery</a>
+        <a href="#hq-hub" onclick="closeMobileMenu()" data-i18n="nav_hq" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold">HQ Operational Hub</a>
+        <a href="#contact" onclick="closeMobileMenu()" data-i18n="nav_contact" class="block py-2.5 px-3 rounded-xl bg-slate-900/50 text-slate-100 font-semibold text-sm hover:text-brand-gold">Supervisor Card</a>
+        
+        <div class="pt-3 border-t border-slate-800 flex flex-col gap-2.5">
+            <a href="https://wa.me/971502966054?text=Hello%20BuildMate%20Team" target="_blank" class="w-full py-3 bg-[#25D366] text-white font-bold rounded-xl text-xs text-center uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg">
+                <i class="fab fa-whatsapp text-base"></i> Instant WhatsApp Chat
+            </a>
+            <a href="tel:+971502966054" class="w-full py-3 coral-gradient text-white font-bold rounded-xl text-xs text-center uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg">
+                <i class="fas fa-phone text-xs"></i> Call Mansoor Ali (050 296 6054)
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="relative min-h-[92vh] flex items-center justify-center bg-brand-dark py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div id="heroSlides" class="absolute inset-0"></div>
+    <div class="blob w-96 h-96 bg-brand-red -top-20 -left-20"></div>
+    <div class="blob w-96 h-96 bg-brand-gold bottom-0 right-0" style="animation-delay:-6s"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-navy/75 to-brand-dark/90"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-brand-navy to-transparent"></div>
+    <div class="max-w-5xl mx-auto text-center relative z-10 space-y-6">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-brand-gold/40 text-brand-gold text-xs font-semibold tracking-wider uppercase shadow-lg">
+            <i class="fas fa-certificate text-brand-red"></i> <span data-i18n="badge_text">Licensed Abu Dhabi Facilities Management LLC</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-black tracking-tight text-white leading-tight">
+            <span data-i18n="hero_title_1">RELIABLE MANAGEMENT.</span><br>
+            <span class="gold-gradient-text" data-i18n="hero_title_2">REMARKABLE SPACES.</span>
+        </h1>
+
+        <p data-i18n="hero_desc" class="max-w-3xl mx-auto text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
+            BuildMate Facilities Management LLC delivers end-to-end technical maintenance, electrical installations, HVAC engineering, plumbing solutions, aluminum fabrication, and gypsum architectural works under one trusted corporate roof in Abu Dhabi.
+        </p>
+
+        <p class="text-sm sm:text-lg font-heading font-semibold text-slate-200 h-7"><span data-i18n="we_deliver">We deliver</span> <span id="typed" class="text-brand-gold border-r-2 border-brand-gold pr-1"></span></p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <a href="https://wa.me/971502966054?text=Hello%20Mansoor%2C%20I%20would%20like%20to%20request%20an%20on-site%20facility%20audit." target="_blank" data-i18n="cta_supervisor" class="shine w-full sm:w-auto px-7 py-3.5 rounded-xl coral-gradient text-white font-bold text-xs uppercase tracking-wider shadow-xl shadow-brand-red/30 hover:scale-105 transition-all text-center flex items-center justify-center gap-2">
+                <i class="fab fa-whatsapp text-base"></i> Direct Supervisor Enquiry
+            </a>
+            <a href="#services" data-i18n="cta_services" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slate-900/80 border border-slate-700 hover:border-brand-gold text-white font-bold text-xs uppercase tracking-wider shadow-lg hover:bg-slate-800 transition-all text-center">
+                View 6 Core Services
+            </a>
+        </div>
+
+        <div id="heroDots" class="flex justify-center gap-2 pt-6"></div>
+        
+        <!-- Stats Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-12 max-w-4xl mx-auto">
+            <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 backdrop-blur-md">
+                <h3 class="text-2xl sm:text-3xl font-heading font-black text-brand-gold">M-9</h3>
+                <p class="text-xs text-slate-300 font-semibold mt-1" data-i18n="stat_1">Abu Dhabi HQ Hub</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 backdrop-blur-md">
+                <h3 class="text-2xl sm:text-3xl font-heading font-black text-white">100%</h3>
+                <p class="text-xs text-slate-300 font-semibold mt-1" data-i18n="stat_2">Certified Quality</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/70 border border-slate-800/90 backdrop-blur-md">
+                <h3 class="text-2xl sm:text-3xl font-heading font-black text-brand-red">24/7</h3>
+                <p class="text-xs text-slate-300 font-semibold mt-1" data-i18n="stat_3">Technical Support</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Service Ribbon -->
+<div class="bg-gradient-to-r from-brand-gold via-[#f1d36b] to-brand-gold py-3 overflow-hidden" aria-hidden="true">
+    <div class="marquee">
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">Gypsum Works<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">Electrical Works<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">Building Maintenance<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">Aluminum Works<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">Plumbing Solutions<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">HVAC Engineering<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">24/7 Emergency Dispatch<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+        <span class="mx-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-dark flex items-center gap-6">Musaffah M-9, Abu Dhabi<i class="fas fa-star text-[9px] text-brand-red"></i></span>
+    </div>
+</div>
+
+<!-- About Company Section -->
+<section id="about" class="py-16 sm:py-24 bg-brand-navy relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6 reveal left">
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">About BuildMate Facilities Management LLC</span>
+                <h2 class="text-2xl sm:text-4xl font-heading font-black text-white leading-tight">
+                    Reliable Management. Remarkable Spaces in Abu Dhabi & UAE.
+                </h2>
+                <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                    BuildMate Facilities Management LLC is a premier, full-service facility management and building maintenance organization. Operating with strict adherence to regional engineering standards, we offer complete lifecycle asset protection for commercial, residential, and corporate developments.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <i class="fas fa-check-circle text-brand-gold text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="text-sm font-bold text-white font-heading">Structural Shield</h4>
+                            <p class="text-[11px] text-slate-300">Minimizing operational risk and maximizing property lifecycle value.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <i class="fas fa-check-circle text-brand-gold text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="text-sm font-bold text-white font-heading">Engineering Precision</h4>
+                            <p class="text-[11px] text-slate-300">Certified execution across MEP, electrical, HVAC, and civil works.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative space-y-6 reveal right">
+                <div class="grid grid-cols-2 gap-3">
+                    <img data-pool="team" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Technical team at work" class="rounded-2xl h-40 sm:h-52 w-full object-cover border border-brand-gold/30 shadow-xl" loading="lazy">
+                    <img data-pool="building" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Managed commercial building" class="rounded-2xl h-40 sm:h-52 w-full object-cover mt-8 border border-brand-gold/30 shadow-xl" loading="lazy">
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-gold to-brand-red opacity-30 blur-lg"></div>
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-brand-cardBg shadow-2xl p-6 sm:p-8 space-y-6">
+                        <div class="flex items-center gap-4 border-b border-slate-800 pb-5">
+                            <div class="w-14 h-14 rounded-2xl bg-brand-navy border border-brand-gold/40 flex items-center justify-center shrink-0">
+                                <i class="fas fa-user-tie text-brand-gold text-2xl"></i>
+                            </div>
+                            <div>
+                                <span class="text-brand-gold text-[10px] font-bold uppercase tracking-widest block" data-i18n="card_rep">Official Representative</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-white font-heading">Mansoor Ali</h3>
+                                <p class="text-xs text-slate-300" data-i18n="card_role">Supervisor • BuildMate FM</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                                <span class="text-slate-300 font-semibold" data-i18n="card_hotline">Direct Hotline:</span>
+                                <a href="tel:+971502966054" class="text-brand-gold font-bold hover:underline">050 296 6054</a>
+                            </div>
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                                <span class="text-slate-300 font-semibold" data-i18n="card_email">Sales Email:</span>
+                                <a href="mailto:sales@buildmatefm.com" class="text-brand-gold font-bold hover:underline">sales@buildmatefm.com</a>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/971502966054?text=Hello%20Mansoor%20Ali%2C%20I%20would%20like%20to%20consult%20regarding%20facilities%20management." target="_blank" data-i18n="card_connect" class="w-full py-3 rounded-xl bg-[#25D366] text-white font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 hover:opacity-95 transition-all">
+                            <i class="fab fa-whatsapp text-base"></i> Connect with Mansoor Ali
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- How We Work -->
+<section id="process" class="py-16 sm:py-24 bg-brand-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-14 reveal">
+            <span data-i18n="proc_sub" class="text-brand-gold text-xs font-bold uppercase tracking-widest">How We Work</span>
+            <h2 data-i18n="proc_title" class="text-2xl sm:text-4xl font-heading font-black text-white">From Enquiry to Handover in 4 Simple Steps</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="relative text-center space-y-3 reveal" style="transition-delay:0ms">
+                <div class="step-line"><div class="relative mx-auto w-[4.2rem] h-[4.2rem] rounded-2xl bg-brand-cardBg border border-brand-gold/50 flex items-center justify-center shadow-lg shadow-brand-gold/10 z-10"><i class="fas fa-phone-volume text-brand-gold text-2xl"></i><span class="absolute -top-2 -right-2 w-7 h-7 rounded-full coral-gradient text-[11px] font-bold flex items-center justify-center">01</span></div></div>
+                <h4 data-i18n="p1t" class="font-heading font-bold text-white text-lg">Request</h4>
+                <p data-i18n="p1d" class="text-xs text-slate-300 max-w-[220px] mx-auto leading-relaxed">Call, WhatsApp or email our supervisor with your property and scope.</p>
+            </div>
+            <div class="relative text-center space-y-3 reveal" style="transition-delay:120ms">
+                <div class="step-line"><div class="relative mx-auto w-[4.2rem] h-[4.2rem] rounded-2xl bg-brand-cardBg border border-brand-gold/50 flex items-center justify-center shadow-lg shadow-brand-gold/10 z-10"><i class="fas fa-clipboard-check text-brand-gold text-2xl"></i><span class="absolute -top-2 -right-2 w-7 h-7 rounded-full coral-gradient text-[11px] font-bold flex items-center justify-center">02</span></div></div>
+                <h4 data-i18n="p2t" class="font-heading font-bold text-white text-lg">Site Audit</h4>
+                <p data-i18n="p2d" class="text-xs text-slate-300 max-w-[220px] mx-auto leading-relaxed">Engineers inspect, measure and issue a clear scope & quotation.</p>
+            </div>
+            <div class="relative text-center space-y-3 reveal" style="transition-delay:240ms">
+                <div class="step-line"><div class="relative mx-auto w-[4.2rem] h-[4.2rem] rounded-2xl bg-brand-cardBg border border-brand-gold/50 flex items-center justify-center shadow-lg shadow-brand-gold/10 z-10"><i class="fas fa-screwdriver-wrench text-brand-gold text-2xl"></i><span class="absolute -top-2 -right-2 w-7 h-7 rounded-full coral-gradient text-[11px] font-bold flex items-center justify-center">03</span></div></div>
+                <h4 data-i18n="p3t" class="font-heading font-bold text-white text-lg">Execution</h4>
+                <p data-i18n="p3d" class="text-xs text-slate-300 max-w-[220px] mx-auto leading-relaxed">Certified technicians deliver the works to regional standards.</p>
+            </div>
+            <div class="relative text-center space-y-3 reveal" style="transition-delay:360ms">
+                <div class="step-line"><div class="relative mx-auto w-[4.2rem] h-[4.2rem] rounded-2xl bg-brand-cardBg border border-brand-gold/50 flex items-center justify-center shadow-lg shadow-brand-gold/10 z-10"><i class="fas fa-shield-heart text-brand-gold text-2xl"></i><span class="absolute -top-2 -right-2 w-7 h-7 rounded-full coral-gradient text-[11px] font-bold flex items-center justify-center">04</span></div></div>
+                <h4 data-i18n="p4t" class="font-heading font-bold text-white text-lg">Handover & Care</h4>
+                <p data-i18n="p4d" class="text-xs text-slate-300 max-w-[220px] mx-auto leading-relaxed">Quality sign-off followed by preventive maintenance support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Executive Company Brochure Section -->
+<section id="brochure" class="py-16 sm:py-24 bg-brand-dark relative border-t border-slate-800 section-bg-textured">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-slate-950/85 backdrop-blur-xl border border-brand-gold/40 rounded-2xl sm:rounded-3xl p-6 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+            
+            <div class="space-y-4 max-w-2xl">
+                <span data-i18n="brochure_badge" class="px-3 py-1 rounded-full bg-brand-red/20 border border-brand-red/40 text-brand-red text-[10px] font-bold uppercase tracking-wider">Official Corporate Profile</span>
+                <h2 data-i18n="brochure_title" class="text-2xl sm:text-4xl font-heading font-black text-white">BuildMate Executive Brochure & Capability Statement</h2>
+                <p data-i18n="brochure_desc" class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                    Explore our full 8-page corporate brochure detailing our complete facility management lifecycle, MEP precision engineering, architectural glazing, gypsum finishes, and regulatory compliance standards across the UAE.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-300"><i class="fas fa-check text-brand-gold mr-1"></i> Gypsum Works</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-300"><i class="fas fa-check text-brand-gold mr-1"></i> Electrical Works</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-300"><i class="fas fa-check text-brand-gold mr-1"></i> Building Maintenance</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-300"><i class="fas fa-check text-brand-gold mr-1"></i> Aluminum Works</span>
+                    <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-[11px] text-slate-300"><i class="fas fa-check text-brand-gold mr-1"></i> Plumbing Solutions</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0">
+                <button onclick="openBrochureModal()" data-i18n="brochure_view_btn" class="px-6 py-3.5 rounded-xl coral-gradient text-white font-bold text-xs uppercase tracking-wider shadow-xl flex items-center justify-center gap-2 hover:scale-105 transition-all">
+                    <i class="fas fa-book-open text-sm"></i> View Interactive Brochure
+                </button>
+                <a href="https://wa.me/971502966054?text=Hello%20Mansoor%20Ali%2C%20please%20send%20me%20the%20BuildMate%20FM%20corporate%20brochure%20PDF." target="_blank" data-i18n="brochure_pdf_btn" class="px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-brand-gold text-white font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 transition-all">
+                    <i class="fab fa-whatsapp text-emerald-400 text-sm"></i> Request PDF on WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Services Division Section -->
+<section id="services" class="py-16 sm:py-24 bg-brand-navy relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+            <span data-i18n="services_subtitle" class="text-brand-gold text-xs font-bold uppercase tracking-widest">Capabilities Outline</span>
+            <h2 data-i18n="services_title" class="text-2xl sm:text-4xl font-heading font-black text-white">Our Core Service Divisions</h2>
+            <p data-i18n="services_desc" class="text-slate-300 text-xs sm:text-sm">Specialized engineering and architectural maintenance solutions provided across Abu Dhabi and UAE.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- 1. Gypsum Works -->
+            <div class="reveal card-glow bg-brand-cardBg rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-40 sm:h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Gypsum Ceilings and Partitions" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-brand-red/90 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider border border-brand-red/30">Interior Finishes</span>
+                    </div>
+                    <div class="p-4 sm:p-6 space-y-2 sm:space-y-3">
+                        <h3 data-i18n="service_gypsum_title" class="text-lg sm:text-xl font-bold text-white font-heading">Gypsum Works</h3>
+                        <p data-i18n="service_gypsum_desc" class="text-xs text-slate-300 leading-relaxed font-semibold">
+                            All types of gypsum ceiling, partition & related works.
+                        </p>
+                        <ul class="text-[11px] sm:text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-800">
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> False Ceilings & Acoustic Grid Systems</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Gypsum Partition Walls & Drywall</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Decorative Moulding & Cornices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 pt-0">
+                    <a href="https://wa.me/971502966054?text=I%20am%20interested%20in%20Gypsum%20Works." target="_blank" data-i18n="enq_gypsum" class="w-full py-2.5 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all min-h-[42px]">
+                        Enquire Gypsum Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Electrical Works -->
+            <div class="reveal card-glow bg-brand-cardBg rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-40 sm:h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Electrical Installation and Maintenance" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-amber-600/90 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider border border-amber-400/30">MEP Engineering</span>
+                    </div>
+                    <div class="p-4 sm:p-6 space-y-2 sm:space-y-3">
+                        <h3 data-i18n="service_elec_title" class="text-lg sm:text-xl font-bold text-white font-heading">Electrical Works</h3>
+                        <p data-i18n="service_elec_desc" class="text-xs text-slate-300 leading-relaxed font-semibold">
+                            Electrical installation, repair & maintenance.
+                        </p>
+                        <ul class="text-[11px] sm:text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-800">
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Distribution Boards & Circuitry Upkeep</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Lighting Fixtures & Power Outlets</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Preventive Electrical Audits</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 pt-0">
+                    <a href="https://wa.me/971502966054?text=I%20am%20interested%20in%20Electrical%20Works." target="_blank" data-i18n="enq_elec" class="w-full py-2.5 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all min-h-[42px]">
+                        Enquire Electrical Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Building Maintenance -->
+            <div class="reveal card-glow bg-brand-cardBg rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-40 sm:h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=800&q=80" alt="General Building Maintenance" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-blue-600/90 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider border border-blue-400/30">Asset Care</span>
+                    </div>
+                    <div class="p-4 sm:p-6 space-y-2 sm:space-y-3">
+                        <h3 data-i18n="service_maint_title" class="text-lg sm:text-xl font-bold text-white font-heading">Building Maintenance</h3>
+                        <p data-i18n="service_maint_desc" class="text-xs text-slate-300 leading-relaxed font-semibold">
+                            General building maintenance & repair services.
+                        </p>
+                        <ul class="text-[11px] sm:text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-800">
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Comprehensive Property Upkeep</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Civil Repairs & Structural Shield</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Scheduled Facility Inspections</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 pt-0">
+                    <a href="https://wa.me/971502966054?text=I%20am%20interested%20in%20Building%20Maintenance." target="_blank" data-i18n="enq_maint" class="w-full py-2.5 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all min-h-[42px]">
+                        Enquire Maintenance Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. Aluminum Works -->
+            <div class="reveal card-glow bg-brand-cardBg rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-40 sm:h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Aluminum Architectural Facades" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-purple-600/90 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider border border-purple-400/30">Architectural</span>
+                    </div>
+                    <div class="p-4 sm:p-6 space-y-2 sm:space-y-3">
+                        <h3 data-i18n="service_alum_title" class="text-lg sm:text-xl font-bold text-white font-heading">Aluminum Works</h3>
+                        <p data-i18n="service_alum_desc" class="text-xs text-slate-300 leading-relaxed font-semibold">
+                            Aluminum fabrication, installation & repair.
+                        </p>
+                        <ul class="text-[11px] sm:text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-800">
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Aluminum Window Frames & Doors</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Structural Facade Cladding</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Custom Architectural Fitting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 pt-0">
+                    <a href="https://wa.me/971502966054?text=I%20am%20interested%20in%20Aluminum%20Works." target="_blank" data-i18n="enq_alum" class="w-full py-2.5 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all min-h-[42px]">
+                        Enquire Aluminum Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Plumbing Solutions -->
+            <div class="reveal card-glow bg-brand-cardBg rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-40 sm:h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Plumbing Installation and Maintenance" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-cyan-600/90 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider border border-cyan-400/30">Sanitary Systems</span>
+                    </div>
+                    <div class="p-4 sm:p-6 space-y-2 sm:space-y-3">
+                        <h3 data-i18n="service_plumb_title" class="text-lg sm:text-xl font-bold text-white font-heading">Plumbing Solutions</h3>
+                        <p data-i18n="service_plumb_desc" class="text-xs text-slate-300 leading-relaxed font-semibold">
+                            Plumbing installation, repair & maintenance.
+                        </p>
+                        <ul class="text-[11px] sm:text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-800">
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Water Supply Piping & Network Fitting</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Sanitary Ware Installation</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Leak Detection & Pipe Repair</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 pt-0">
+                    <a href="https://wa.me/971502966054?text=I%20am%20interested%20in%20Plumbing%20Solutions." target="_blank" data-i18n="enq_plumb" class="w-full py-2.5 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all min-h-[42px]">
+                        Enquire Plumbing Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. HVAC & Cooling Systems -->
+            <div class="reveal card-glow bg-brand-cardBg rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="h-40 sm:h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" alt="HVAC Commercial Cooling and Air Systems" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-cardBg via-transparent to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-emerald-600/90 text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider border border-emerald-400/30">Climate Control</span>
+                    </div>
+                    <div class="p-4 sm:p-6 space-y-2 sm:space-y-3">
+                        <h3 data-i18n="service_hvac_title" class="text-lg sm:text-xl font-bold text-white font-heading">HVAC & Air Systems</h3>
+                        <p data-i18n="service_hvac_desc" class="text-xs text-slate-300 leading-relaxed font-semibold">
+                            Air conditioning, central cooling plant upkeep & ventilation.
+                        </p>
+                        <ul class="text-[11px] sm:text-xs text-slate-300 space-y-1.5 pt-2 border-t border-slate-800">
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> AC Servicing, Repair & Refrigerant Charging</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Duct Cleaning & Air Purification</li>
+                            <li><i class="fas fa-check text-brand-gold mr-1.5"></i> Central Cooling Plant Upkeep</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-4 sm:p-6 pt-0">
+                    <a href="https://wa.me/971502966054?text=I%20am%20interested%20in%20HVAC%20Services." target="_blank" data-i18n="enq_hvac" class="w-full py-2.5 rounded-xl border border-slate-700 hover:border-brand-gold text-slate-200 text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-all min-h-[42px]">
+                        Enquire HVAC Services
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Project Gallery -->
+<section id="gallery" class="py-16 sm:py-24 bg-brand-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-8 reveal">
+            <span data-i18n="gal_sub" class="text-brand-gold text-xs font-bold uppercase tracking-widest">Our Disciplines</span>
+            <h2 data-i18n="gal_title" class="text-2xl sm:text-4xl font-heading font-black text-white">Our Service Gallery</h2>
+            <p data-i18n="gal_desc" class="text-slate-300 text-xs sm:text-sm">Illustrative imagery of our service disciplines. Tap any image to enlarge.</p>
+        </div>
+        <div id="filters" class="flex flex-wrap justify-center gap-2 mb-8 reveal"></div>
+        <div id="galleryGrid" class="columns-1 sm:columns-2 lg:columns-3 gap-4"></div>
+        <div class="text-center mt-6">
+            <button id="shuffleBtn" class="px-5 py-2.5 rounded-xl border border-brand-gold/50 text-brand-gold text-xs font-bold uppercase tracking-wider hover:bg-brand-gold hover:text-brand-dark transition">
+                <i class="fas fa-shuffle mr-2"></i>Shuffle Gallery
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="relative py-16 overflow-hidden border-t border-slate-800">
+    <img data-pool="building" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-navy/85 to-brand-red/50"></div>
+    <div class="relative max-w-4xl mx-auto px-4 text-center space-y-5 reveal">
+        <h2 data-i18n="cta_t" class="text-2xl sm:text-4xl font-heading font-black text-white">Need a reliable maintenance partner in Abu Dhabi?</h2>
+        <p data-i18n="cta_d" class="text-slate-200 text-sm">Speak directly with our supervisor and get a site audit arranged.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="https://wa.me/971502966054" target="_blank" class="shine px-7 py-3.5 rounded-xl coral-gradient text-white text-xs font-bold uppercase tracking-wider"><i class="fab fa-whatsapp mr-2"></i>WhatsApp Mansoor</a>
+            <a href="tel:+971502966054" class="px-7 py-3.5 rounded-xl bg-white text-brand-dark text-xs font-bold uppercase tracking-wider hover:bg-brand-gold transition"><i class="fas fa-phone-alt mr-2"></i>050 296 6054</a>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-label="Image viewer">
+    <button id="lbClose" class="absolute top-5 right-5 w-11 h-11 rounded-full bg-slate-800 text-white text-lg hover:bg-brand-red" aria-label="Close"><i class="fas fa-times"></i></button>
+    <img id="lbImg" alt="" class="max-h-[88vh] max-w-full rounded-xl shadow-2xl">
+</div>
+
+<!-- Back to top -->
+<button id="toTop" aria-label="Back to top" class="fixed bottom-24 right-6 z-40 w-11 h-11 rounded-full bg-brand-navy border border-brand-gold/60 text-brand-gold shadow-lg opacity-0 pointer-events-none transition"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Abu Dhabi Headquarters Operations Hub Section -->
+<section id="hq-hub" class="py-16 sm:py-24 bg-[#0B132B] relative border-t border-slate-800 section-bg-textured">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-slate-950/85 backdrop-blur-xl border border-brand-gold/40 rounded-2xl sm:rounded-3xl p-6 sm:p-12 shadow-2xl space-y-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b border-slate-800 pb-6">
+                <div class="space-y-2">
+                    <span data-i18n="hq_subtitle" class="text-brand-gold text-xs font-bold uppercase tracking-widest">Abu Dhabi Operations</span>
+                    <h2 data-i18n="hq_title" class="text-2xl sm:text-4xl font-heading font-black text-white">Musaffah M-9 Headquarters Hub</h2>
+                    <p data-i18n="hq_desc" class="text-slate-300 text-xs sm:text-sm">Central logistics, engineering support, and 24/7 technical team dispatch base.</p>
+                </div>
+                <a href="tel:+971502966054" class="px-5 py-3 rounded-xl coral-gradient text-white text-xs font-bold uppercase tracking-wider flex items-center gap-2 shadow-lg shrink-0 hover:scale-105 transition-transform">
+                    <i class="fas fa-headset text-sm"></i> 24/7 Emergency Dispatch
+                </a>
+            </div>
+
+            <!-- HQ Visual Photo Grid Showcase -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="reveal rounded-2xl overflow-hidden border border-slate-800 bg-brand-cardBg/90 relative group shadow-lg">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="MEP & Electrical Workshop" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-navy/90 border border-brand-gold/40 text-brand-gold text-[10px] font-bold uppercase shadow">Electrical</span>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <h4 class="text-sm font-bold text-white">MEP & Electrical Diagnostics</h4>
+                        <p class="text-[11px] text-slate-300">Testing and diagnostics for distribution boards, load balancing & circuitry.</p>
+                    </div>
+                </div>
+
+                <div class="reveal rounded-2xl overflow-hidden border border-slate-800 bg-brand-cardBg/90 relative group shadow-lg">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="HVAC & Chiller Maintenance Depot" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-navy/90 border border-brand-gold/40 text-brand-gold text-[10px] font-bold uppercase shadow">Climate Control</span>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <h4 class="text-sm font-bold text-white">HVAC & Chiller Servicing</h4>
+                        <p class="text-[11px] text-slate-300">Servicing for central cooling plants, AC systems and duct purification.</p>
+                    </div>
+                </div>
+
+                <div class="reveal rounded-2xl overflow-hidden border border-slate-800 bg-brand-cardBg/90 relative group shadow-lg">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Architectural Finishes Workshop" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-navy/90 border border-brand-gold/40 text-brand-gold text-[10px] font-bold uppercase shadow">Architectural</span>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <h4 class="text-sm font-bold text-white">Aluminium & Glass Works</h4>
+                        <p class="text-[11px] text-slate-300">Custom framing, structural cladding and glass pane installation.</p>
+                    </div>
+                </div>
+
+                <div class="reveal rounded-2xl overflow-hidden border border-slate-800 bg-brand-cardBg/90 relative group shadow-lg">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Commercial Interiors & Gypsum Works" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-navy/90 border border-brand-gold/40 text-brand-gold text-[10px] font-bold uppercase shadow">Gypsum & Finishes</span>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <h4 class="text-sm font-bold text-white">Gypsum & Acoustic Partitions</h4>
+                        <p class="text-[11px] text-slate-300">False ceiling grids, decorative moulding, and modern drywall solutions.</p>
+                    </div>
+                </div>
+
+                <div class="reveal rounded-2xl overflow-hidden border border-slate-800 bg-brand-cardBg/90 relative group shadow-lg">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Civil Repair & Structural Asset Management" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-navy/90 border border-brand-gold/40 text-brand-gold text-[10px] font-bold uppercase shadow">Facility Upkeep</span>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <h4 class="text-sm font-bold text-white">Civil Maintenance & Asset Care</h4>
+                        <p class="text-[11px] text-slate-300">Routine property care, general civil repairs, and structural shield protection.</p>
+                    </div>
+                </div>
+
+                <div class="reveal rounded-2xl overflow-hidden border border-slate-800 bg-brand-cardBg/90 relative group shadow-lg">
+                    <div class="h-48 sm:h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="Rapid Response & Dispatch Center" class="w-full h-full object-cover img-zoom" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-brand-navy/90 border border-brand-gold/40 text-brand-gold text-[10px] font-bold uppercase shadow">Rapid Response</span>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <h4 class="text-sm font-bold text-white">Rapid Response & Mobile Support</h4>
+                        <p class="text-[11px] text-slate-300">Dispatch support for technical callouts across the UAE.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- HQ Location Details Footer Strip -->
+            <div class="pt-6 border-t border-slate-800/80 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+                <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+                    <i class="fas fa-map-location-dot text-brand-gold text-xl shrink-0"></i>
+                    <div>
+                        <strong class="text-white block font-heading">Location Address</strong>
+                        <span class="text-slate-300 text-[11px]">Musaffah M-9, P.O. Box: 92464, Abu Dhabi - U.A.E</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+                    <i class="fas fa-user-shield text-brand-red text-xl shrink-0"></i>
+                    <div>
+                        <strong class="text-white block font-heading">Official Contact</strong>
+                        <span class="text-slate-300 text-[11px]">Mansoor Ali (Supervisor) • 050 296 6054</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-900/70 border border-slate-800">
+                    <i class="fas fa-clock text-emerald-400 text-xl shrink-0"></i>
+                    <div>
+                        <strong class="text-white block font-heading">Working Hours</strong>
+                        <span class="text-slate-300 text-[11px]">24/7 Technical Support & Dispatch Service</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Supervisor Contact & Enquiry Section -->
+<section id="contact" class="py-16 sm:py-24 bg-brand-navy relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6">
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Client Engagement</span>
+                <h2 class="text-2xl sm:text-4xl font-heading font-black text-white leading-tight">
+                    Schedule an On-Site Audit or Request a Proposal
+                </h2>
+                <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                    Connect directly with our supervisory team for prompt quotations, emergency technical response, or bespoke annual maintenance contracts (AMC) for your properties in Abu Dhabi and across the UAE.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <div class="w-12 h-12 rounded-xl bg-brand-cardBg border border-brand-gold/30 flex items-center justify-center text-brand-gold text-xl shrink-0">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-slate-300 font-semibold uppercase">Direct Mobile Line</span>
+                            <a href="tel:+971502966054" class="text-white font-bold text-base hover:text-brand-gold block">050 296 6054</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <div class="w-12 h-12 rounded-xl bg-brand-cardBg border border-brand-gold/30 flex items-center justify-center text-brand-gold text-xl shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-slate-300 font-semibold uppercase">Official Sales Email</span>
+                            <a href="mailto:sales@buildmatefm.com" class="text-white font-bold text-base hover:text-brand-gold block">sales@buildmatefm.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <div class="w-12 h-12 rounded-xl bg-brand-cardBg border border-brand-gold/30 flex items-center justify-center text-brand-gold text-xl shrink-0">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-[11px] text-slate-300 font-semibold uppercase">Headquarters Location</span>
+                            <span class="text-white font-bold text-sm block">Musaffah M-9, P.O. Box: 92464, Abu Dhabi - UAE</span>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-slate-800 h-56">
+                        <iframe title="BuildMate location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full border-0" src="https://www.google.com/maps?q=Musaffah+M-9+Abu+Dhabi&output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Quick Enquiry Card -->
+            <div class="bg-brand-cardBg border border-brand-gold/40 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+                <div>
+                    <h3 class="text-xl font-heading font-black text-white">Quick Service Enquiry</h3>
+                    <p class="text-xs text-slate-300 mt-1">Submit your details to instantly connect with supervisor Mansoor Ali on WhatsApp.</p>
+                </div>
+
+                <form id="enquiryForm" onsubmit="submitEnquiry(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
+                        <input type="text" id="clientName" required placeholder="e.g. Ahmed Al Mansoori" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-gold transition-colors">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Mobile Number</label>
+                            <input type="tel" id="clientPhone" required placeholder="050 XXXXXXX" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Select Service</label>
+                            <select id="clientService" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-3 text-xs text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                <option value="Gypsum Works">Gypsum Works</option>
+                                <option value="Electrical Works">Electrical Works</option>
+                                <option value="Building Maintenance">Building Maintenance</option>
+                                <option value="Aluminum Works">Aluminum Works</option>
+                                <option value="Plumbing Solutions">Plumbing Solutions</option>
+                                <option value="HVAC & Air Systems">HVAC & Air Systems</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Project Details or Requirements</label>
+                        <textarea id="clientMsg" rows="3" placeholder="Describe property type and maintenance scope..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-brand-gold transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl coral-gradient text-white font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 hover:opacity-95 transition-all">
+                        <i class="fab fa-whatsapp text-base"></i> Send Enquiry via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-brand-dark border-t border-slate-800 py-12 px-4 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+        <div class="space-y-2">
+            <span class="text-sm font-heading font-bold text-white tracking-wider block">BUILDMATE FACILITIES MANAGEMENT LLC</span>
+            <p>Musaffah M-9, P.O. Box: 92464, Abu Dhabi - United Arab Emirates</p>
+        </div>
+        <div class="flex items-center space-x-6">
+            <a href="#home" class="hover:text-brand-gold transition-colors">Home</a>
+            <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
+            <a href="#brochure" class="hover:text-brand-gold transition-colors">Brochure</a>
+            <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
+            <a href="#gallery" class="hover:text-brand-gold transition-colors">Gallery</a>
+            <a href="#hq-hub" class="hover:text-brand-gold transition-colors">HQ Operations</a>
+            <a href="#contact" class="hover:text-brand-gold transition-colors">Contact</a>
+        </div>
+        <div>
+            <p>&copy; <span id="year">2026</span> BuildMate FM LLC. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp Action Button -->
+<a href="https://wa.me/971502966054?text=Hello%20BuildMate%20Team%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl floating-pulse hover:scale-110 transition-transform">
+    <i class="fab fa-whatsapp text-2xl sm:text-3xl"></i>
+</a>
+
+<!-- Floating Emergency Call Button -->
+<a href="tel:+971502966054" aria-label="Emergency Call" class="fixed bottom-6 left-6 z-40 w-12 h-12 sm:w-14 sm:h-14 coral-gradient text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+    <i class="fas fa-phone-alt text-lg"></i>
+</a>
+
+<!-- Interactive Brochure Modal -->
+<div id="brochureModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-brand-cardBg border border-brand-gold/50 rounded-3xl max-w-4xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden my-auto">
+        <!-- Modal Header -->
+        <div class="p-4 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-brand-navy">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-red/20 border border-brand-red/40 flex items-center justify-center text-brand-red">
+                    <i class="fas fa-file-pdf text-lg"></i>
+                </div>
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-white font-heading">BuildMate Executive Corporate Brochure</h3>
+                    <span class="text-xs text-brand-gold">8-Page Service Capability Profile</span>
+                </div>
+            </div>
+            <button onclick="closeBrochureModal()" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Modal Page Selector Quickbar -->
+        <div class="bg-slate-900/90 px-4 py-3 border-b border-slate-800 flex items-center gap-2 overflow-x-auto">
+            <span class="text-xs font-bold text-slate-300 shrink-0 mr-1">Select Page:</span>
+            <button onclick="setBrochurePage(0)" id="thumbBtn0" class="px-3 py-1.5 rounded-lg bg-brand-gold text-brand-dark text-xs font-bold shrink-0">P. 1</button>
+            <button onclick="setBrochurePage(1)" id="thumbBtn1" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 2</button>
+            <button onclick="setBrochurePage(2)" id="thumbBtn2" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 3</button>
+            <button onclick="setBrochurePage(3)" id="thumbBtn3" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 4</button>
+            <button onclick="setBrochurePage(4)" id="thumbBtn4" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 5</button>
+            <button onclick="setBrochurePage(5)" id="thumbBtn5" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 6</button>
+            <button onclick="setBrochurePage(6)" id="thumbBtn6" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 7</button>
+            <button onclick="setBrochurePage(7)" id="thumbBtn7" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700">P. 8</button>
+        </div>
+
+        <!-- Modal Body Content Viewer -->
+        <div class="p-6 overflow-y-auto space-y-6 flex-1 text-center bg-brand-dark/90">
+            <div id="brochureViewerContent" class="space-y-4 max-w-2xl mx-auto py-4"></div>
+        </div>
+
+        <!-- Modal Footer Controls -->
+        <div class="p-4 sm:p-5 border-t border-slate-800 bg-brand-navy flex items-center justify-between">
+            <button onclick="prevBrochurePage()" class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-bold hover:bg-slate-800 flex items-center gap-1.5">
+                <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <span id="brochurePageIndicator" class="text-xs font-bold text-brand-gold">Page 1 of 8</span>
+            <button onclick="nextBrochurePage()" class="px-4 py-2 rounded-xl coral-gradient text-white text-xs font-bold hover:opacity-95 flex items-center gap-1.5">
+                Next <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Application Logic -->
+<script>
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+    function closeMobileMenu() {
+        if (mobileMenu) mobileMenu.classList.add('hidden');
+    }
+
+    let currentLang = 'en';
+    const translations = {
+        en: {
+            address: "Musaffah M-9, P.O. Box: 92464, Abu Dhabi - U.A.E",
+            supervisor_label: "Supervisor: Mansoor Ali",
+            nav_home: "Home",
+            nav_about: "About Us",
+            nav_brochure: "Brochure",
+            nav_services: "Our Services",
+            nav_hq: "HQ Operations",
+            nav_contact: "Contact Card",
+            enquire_btn: "Enquire Now",
+            badge_text: "Licensed Abu Dhabi Facilities Management LLC",
+            hero_title_1: "RELIABLE MANAGEMENT.",
+            hero_title_2: "REMARKABLE SPACES.",
+            hero_desc: "BuildMate Facilities Management LLC delivers end-to-end technical maintenance, electrical installations, HVAC engineering, plumbing solutions, aluminum fabrication, and gypsum architectural works under one trusted corporate roof in Abu Dhabi.",
+            cta_supervisor: "Direct Supervisor Enquiry",
+            cta_services: "View 6 Core Services",
+            stat_1: "Abu Dhabi HQ Hub",
+            stat_2: "Certified Quality",
+            stat_3: "Technical Support",
+            card_rep: "Official Representative",
+            card_role: "Supervisor",
+            card_hotline: "Direct Hotline",
+            card_email: "Official Sales Email",
+            card_connect: "Connect with Mansoor Ali",
+            brochure_badge: "Official Corporate Profile",
+            brochure_title: "BuildMate Executive Brochure & Capability Statement",
+            brochure_desc: "Explore our full 8-page corporate brochure detailing our complete facility management lifecycle, MEP precision engineering, architectural glazing, gypsum finishes, and regulatory compliance standards across the UAE.",
+            brochure_view_btn: "View Interactive Brochure",
+            brochure_pdf_btn: "Request PDF on WhatsApp",
+            services_subtitle: "Capabilities Outline",
+            services_title: "Our Core Service Divisions",
+            services_desc: "Specialized engineering and architectural maintenance solutions provided across Abu Dhabi and UAE.",
+            service_gypsum_title: "Gypsum Works",
+            service_gypsum_desc: "All types of gypsum ceiling, partition & related architectural works.",
+            service_elec_title: "Electrical Works",
+            service_elec_desc: "Electrical installation, repair & maintenance.",
+            service_maint_title: "Building Maintenance",
+            service_maint_desc: "General building maintenance & repair services.",
+            service_alum_title: "Aluminum Works",
+            service_alum_desc: "Aluminum fabrication, installation & repair.",
+            service_plumb_title: "Plumbing Solutions",
+            service_plumb_desc: "Plumbing installation, repair & maintenance.",
+            service_hvac_title: "HVAC & Air Systems",
+            service_hvac_desc: "Air conditioning, central cooling plant upkeep & ventilation.",
+            hq_subtitle: "Abu Dhabi Operations",
+            hq_title: "Musaffah M-9 Headquarters Hub",
+            hq_desc: "Central logistics, engineering support, and 24/7 technical team dispatch base.",
+            enquire_service_btn: "Enquire Services",
+            enq_gypsum: "Enquire Gypsum Services", enq_elec: "Enquire Electrical Services", enq_maint: "Enquire Maintenance Services", enq_alum: "Enquire Aluminum Services", enq_plumb: "Enquire Plumbing Services", enq_hvac: "Enquire HVAC Services",
+            nav_gallery: "Gallery", gal_title: "Our Service Gallery", gal_sub: "Our Disciplines", gal_desc: "Illustrative imagery of our service disciplines. Tap any image to enlarge.",
+            proc_sub: "How We Work", proc_title: "From Enquiry to Handover in 4 Simple Steps", p1t: "Request", p1d: "Call, WhatsApp or email our supervisor with your property and scope.", p2t: "Site Audit", p2d: "Engineers inspect, measure and issue a clear scope & quotation.", p3t: "Execution", p3d: "Certified technicians deliver the works to regional standards.", p4t: "Handover & Care", p4d: "Quality sign-off followed by preventive maintenance support.",
+            cta_t: "Need a reliable maintenance partner in Abu Dhabi?", cta_d: "Speak directly with our supervisor and get a site audit arranged.", we_deliver: "We deliver"
+        },
+        ar: {
+            address: "مصفح م-9، ص.ب: 92464، أبوظبي - الإمارات العربية المتحدة",
+            supervisor_label: "المشرف: منصور علي",
+            nav_home: "الرئيسية",
+            nav_about: "من نحن",
+            nav_brochure: "الكتيب التعريفي",
+            nav_services: "خدماتنا",
+            nav_hq: "المقر الرئيسي",
+            nav_contact: "بطاقة التواصل",
+            enquire_btn: "استفسر الآن",
+            badge_text: "شركة مرخصة لإدارة المنشآت في أبوظبي",
+            hero_title_1: "إدارة موثوقة.",
+            hero_title_2: "مساحات متميزة.",
+            hero_desc: "تقدم شركة بيلدميت لإدارة المنشآت ش.ذ.م.م خدمات الصيانة الفنية المتكاملة، والتركيبات الكهربائية، وهندسة التكييف، وحلول السباكة، وتصنيع الألمنيوم، وأعمال الجبس المعمارية تحت مظلة واحدة موثوقة في أبوظبي.",
+            cta_supervisor: "استفسار مباشر مع المشرف",
+            cta_services: "عرض الخدمات الرئيسية",
+            stat_1: "مقر أبوظبي الرئيسي",
+            stat_2: "جودة معتمدة",
+            stat_3: "دعم فني",
+            card_rep: "الممثل الرسمي",
+            card_role: "المشرف",
+            card_hotline: "الخط المباشر",
+            card_email: "البريد الإلكتروني للمبيعات",
+            card_connect: "تواصل مع منصور علي",
+            brochure_badge: "الملف التعريفي الرسمي",
+            brochure_title: "كتيب شركة بيلدميت التنفيذي ونطاق الخدمات",
+            brochure_desc: "استعرض الكتيب التعريفي المكون من 8 صفحات والذي يوضح التفاصيل الكاملة لإدارة المرافق، والهندسة الميكانيكية والكهربائية، وواجهات الألمنيوم، وأعمال الجبس، والالتزام بالمعايير التنظيمية.",
+            brochure_view_btn: "تصفح الكتيب التفاعلي",
+            brochure_pdf_btn: "طلب ملف PDF عبر واتساب",
+            services_subtitle: "نطاق الخدمات",
+            services_title: "أقسام خدماتنا الرئيسية",
+            services_desc: "حلول هندسية ومعمارية متخصصة في صيانة المباني في جميع أنحاء أبوظبي والإمارات.",
+            service_gypsum_title: "أعمال الجبس",
+            service_gypsum_desc: "جميع أنواع الأسقف المستعارة من الجبس والديكورات القواطع الجدارية.",
+            service_elec_title: "الأعمال الكهربائية",
+            service_elec_desc: "تركيب وإصلاح وصيانة التمديدات واللوحات الكهربائية.",
+            service_maint_title: "صيانة المباني",
+            service_maint_desc: "خدمات الصيانة العامة والإصلاحات المدنية للمنشآت.",
+            service_alum_title: "أعمال الألمنيوم",
+            service_alum_desc: "تصنيع وتركيب وإصلاح واجهات النوافذ والأبواب الألمنيوم.",
+            service_plumb_title: "حلول السباكة",
+            service_plumb_desc: "تركيب وصيانة شبكات المياه والصرف الصحي والمعدات.",
+            service_hvac_title: "أنظمة التكييف والتهوية",
+            service_hvac_desc: "صيانة وإصلاح وحدات التكييف المركزية وأنظمة تنقية الهواء.",
+            hq_subtitle: "عمليات أبوظبي",
+            hq_title: "مركز العمليات الرئيسي - مصفح م-9",
+            hq_desc: "المركز اللوجستي، وورش الهندسة المعتمدة، وقاعدة انطلاق فرق الدعم الفني على مدار الساعة.",
+            enquire_service_btn: "طلب الخدمة",
+            enq_gypsum: "اطلب خدمات الجبس", enq_elec: "اطلب الخدمات الكهربائية", enq_maint: "اطلب خدمات الصيانة", enq_alum: "اطلب خدمات الألمنيوم", enq_plumb: "اطلب خدمات السباكة", enq_hvac: "اطلب خدمات التكييف",
+            nav_gallery: "المعرض", gal_title: "معرض خدماتنا", gal_sub: "تخصصاتنا", gal_desc: "صور توضيحية لتخصصات خدماتنا. اضغط على أي صورة لتكبيرها.",
+            proc_sub: "كيف نعمل", proc_title: "من الاستفسار إلى التسليم في 4 خطوات بسيطة", p1t: "الطلب", p1d: "اتصل بالمشرف أو راسله عبر واتساب أو البريد مع تفاصيل العقار ونطاق العمل.", p2t: "معاينة الموقع", p2d: "يقوم المهندسون بالمعاينة والقياس وإصدار نطاق عمل وعرض سعر واضح.", p3t: "التنفيذ", p3d: "ينفذ فنيون معتمدون الأعمال وفق المعايير المحلية.", p4t: "التسليم والرعاية", p4d: "اعتماد الجودة يليه دعم الصيانة الوقائية.",
+            cta_t: "هل تبحث عن شريك صيانة موثوق في أبوظبي؟", cta_d: "تحدث مباشرة مع المشرف لترتيب معاينة الموقع.", we_deliver: "نقدم"
+        }
+    };
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'ar' : 'en';
+        const htmlTag = document.documentElement;
+        const langText = document.getElementById('langText');
+
+        if (currentLang === 'ar') {
+            htmlTag.setAttribute('dir', 'rtl');
+            htmlTag.setAttribute('lang', 'ar');
+            langText.textContent = 'English';
+        } else {
+            htmlTag.setAttribute('dir', 'ltr');
+            htmlTag.setAttribute('lang', 'en');
+            langText.textContent = 'العربية';
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const val = translations[currentLang][key];
+            if (!val) return;
+            if (el.children.length) {
+                const tn = [...el.childNodes].reverse().find(n => n.nodeType === 3 && n.textContent.trim());
+                if (tn) tn.textContent = ' ' + val; else el.appendChild(document.createTextNode(' ' + val));
+            } else { el.textContent = val; }
+        });
+    }
+
+    let activeBrochurePage = 0;
+    const brochurePagesData = [
+        { title: "Page 1: Executive Corporate Profile", desc: "BuildMate Facilities Management LLC • Reliable Management. Remarkable Spaces. Executive Corporate Profile & Service Capabilities.", icon: "fa-building-shield" },
+        { title: "Page 2: Who We Are & Executive Leadership", desc: "Operating with strict adherence to regional engineering standards, offering complete lifecycle asset protection for commercial, residential, and corporate developments.", icon: "fa-users" },
+        { title: "Page 3: Core Operating Pillars", desc: "01. Structural Shield & Reliability | 02. Engineering Precision (Electrical, Plumbing, HVAC, Civil Works) | 03. Operational Excellence (24/7 Support).", icon: "fa-layer-group" },
+        { title: "Page 4: Facilities & Building Maintenance", desc: "Complete end-to-end building operations, general civil repairs, routine upkeep, electrical fittings, and preventive maintenance programs.", icon: "fa-screwdriver-wrench" },
+        { title: "Page 5: Engineering, MEP & HVAC Services", desc: "Sanitary pipe networks, water supply fittings, central cooling plants, AC systems, air purification, and ventilation ductwork.", icon: "fa-snowflake" },
+        { title: "Page 6: Architectural & Interior Services", desc: "Aluminum installation works (cladding, window frames), curtain wall glass plates, and false ceiling gypsum acoustic partition solutions.", icon: "fa-hammer" },
+        { title: "Page 7: Specialized Maintenance & Glass Repair", desc: "Specialized glass repair, seal replacement, scratch restoration, and emergency glass pane maintenance.", icon: "fa-window-maximize" },
+        { title: "Page 8: Abu Dhabi Headquarters & Direct Contact", desc: "Musaffah M-9, P.O. Box: 92464, Abu Dhabi - UAE. Mobile: 056-4880781 / 050-2966054 • Email: Info@buildmatefm.com", icon: "fa-map-location-dot" }
+    ];
+
+    function openBrochureModal() {
+        document.getElementById('brochureModal').classList.remove('hidden');
+        setBrochurePage(0);
+    }
+    const BROCHURE_PDF = "assets/brochure.pdf";
+
+function openBrochureModal() {
+    document.getElementById('brochureModal').classList.remove('hidden');
+
+    document.getElementById('brochurePDF').src = BROCHURE_PDF;
+}
+
+    function closeBrochureModal() {
+        document.getElementById('brochureModal').classList.add('hidden');
+        document.getElementById('brochurePDF').src = "";
+    }
+
+    function setBrochurePage(idx) {
+        activeBrochurePage = idx;
+        const data = brochurePagesData[idx];
+        document.getElementById('brochureViewerContent').innerHTML = `
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-navy border border-brand-gold/40 flex items-center justify-center text-brand-gold text-2xl shadow-xl">
+                <i class="fas ${data.icon}"></i>
+            </div>
+            <h4 class="text-lg sm:text-xl font-bold text-white font-heading">${data.title}</h4>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed px-4">${data.desc}</p>
+            <div class="pt-2">
+                <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-brand-gold text-[10px] font-bold uppercase">BuildMate FM Official Brochure</span>
+            </div>
+        `;
+        document.getElementById('brochurePageIndicator').textContent = `Page ${idx + 1} of 8`;
+
+        for (let i = 0; i < 8; i++) {
+            const btn = document.getElementById(`thumbBtn${i}`);
+            if (btn) {
+                if (i === idx) {
+                    btn.className = "px-3 py-1.5 rounded-lg bg-brand-gold text-brand-dark text-xs font-bold shrink-0";
+                } else {
+                    btn.className = "px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold shrink-0 hover:bg-slate-700";
+                }
+            }
+        }
+    }
+    function nextBrochurePage() {
+        if (activeBrochurePage < 7) setBrochurePage(activeBrochurePage + 1);
+        else setBrochurePage(0);
+    }
+    function prevBrochurePage() {
+        if (activeBrochurePage > 0) setBrochurePage(activeBrochurePage - 1);
+        else setBrochurePage(7);
+    }
+
+    function submitEnquiry(e) {
+        e.preventDefault();
+        const name = document.getElementById('clientName').value;
+        const phone = document.getElementById('clientPhone').value;
+        const service = document.getElementById('clientService').value;
+        const msg = document.getElementById('clientMsg').value;
+
+        const text = `Hello BuildMate FM Team,%0A%0A*New Client Enquiry*%0A- Name: ${encodeURIComponent(name)}%0A- Phone: ${encodeURIComponent(phone)}%0A- Service: ${encodeURIComponent(service)}%0A- Details: ${encodeURIComponent(msg)}`;
+        window.open(`https://wa.me/971502966054?text=${text}`, '_blank');
+    }
+</script>
+
+<script>
+(function(){
+  const P=id=>"https://images.unsplash.com/photo-"+id+"?auto=format&fit=crop&w=900&q=80";
+  const pick=a=>a[Math.floor(Math.random()*a.length)];
+  const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+  const POOL={
+    team:["1504307651254-35680f356dfd","1581094794329-c8112a89af12","1581092160607-ee22621dd758","1521737711867-e3b97375f902"],
+    building:["1486406146926-c627a92ad1ab","1486325212027-8081e485255e","1497366216548-37526070297c","1512453979798-5ea266f8880c"]
+  };
+  const GAL=[
+    ["Gypsum Works","1600585154340-be6161a56a0c","Gypsum ceilings & partitions"],
+    ["Gypsum Works","1497366216548-37526070297c","Commercial interior finishes"],
+    ["Electrical","1621905251189-08b45d6a269e","Electrical installation & maintenance"],
+    ["Electrical","1581092160607-ee22621dd758","MEP & electrical workshop"],
+    ["Maintenance","1541888946425-d0fbb186a5b7","General building maintenance"],
+    ["Maintenance","1504307651254-35680f356dfd","Civil repair & asset care"],
+    ["Aluminum","1503387762-592deb58ef4e","Aluminum architectural facades"],
+    ["Aluminum","1486406146926-c627a92ad1ab","Glazing & curtain wall systems"],
+    ["Plumbing","1585704032915-c3400ca199e7","Plumbing installation & repair"],
+    ["HVAC","1621905252507-b35492cc74b4","Commercial cooling & air systems"],
+    ["HVAC","1581094794329-c8112a89af12","Chiller & AC servicing"],
+    ["Facilities","1486325212027-8081e485255e","Managed commercial towers"],
+    ["Facilities","1521737711867-e3b97375f902","Rapid response & dispatch"]
+  ];
+
+  const heroIds=shuffle(["1541888946425-d0fbb186a5b7","1486406146926-c627a92ad1ab","1581094794329-c8112a89af12","1486325212027-8081e485255e","1503387762-592deb58ef4e"]);
+  const hs=document.getElementById("heroSlides"),dots=document.getElementById("heroDots");
+  heroIds.forEach((id,i)=>{const d=document.createElement("div");d.className="hero-slide";d.dataset.bg="url('"+P(id).replace("w=900","w=1600")+"')";if(i===0)d.style.backgroundImage=d.dataset.bg;hs.appendChild(d);
+    const b=document.createElement("button");b.className="w-2.5 h-2.5 rounded-full bg-slate-500 transition-all";b.setAttribute("aria-label","Slide "+(i+1));b.onclick=()=>{go(i);reset()};dots.appendChild(b)});
+  let cur=0,timer;
+  function go(n){cur=n;[n,(n+1)%heroIds.length].forEach(k=>{const e=hs.children[k];if(e&&!e.style.backgroundImage)e.style.backgroundImage=e.dataset.bg});[...hs.children].forEach((s,i)=>{s.classList.remove("active");if(i===n){void s.offsetWidth;s.classList.add("active")}});
+    [...dots.children].forEach((d,i)=>{d.className="h-2.5 rounded-full transition-all "+(i===n?"w-7 bg-brand-gold":"w-2.5 bg-slate-500")})}
+  function reset(){clearInterval(timer);timer=setInterval(()=>go((cur+1)%heroIds.length),6000)}
+  go(0);reset();
+
+  const W={en:["reliable technical maintenance","HVAC & MEP engineering","premium gypsum & aluminum works","24/7 emergency response"],ar:["صيانة فنية موثوقة","هندسة التكييف والأنظمة الميكانيكية والكهربائية","أعمال جبس وألمنيوم متميزة","استجابة طارئة على مدار الساعة"]};
+  const t=document.getElementById("typed");let wi=0,ci=0,del=false;
+  (function tick(){const words=W[currentLang]||W.en;if(wi>=words.length)wi=0;const w=words[wi];t.textContent=w.slice(0,ci);
+    if(!del&&ci===w.length){del=true;return setTimeout(tick,1600)}
+    if(del&&ci===0){del=false;wi=(wi+1)%words.length}
+    ci+=del?-1:1;setTimeout(tick,del?28:55)})();
+
+  document.querySelectorAll("img[data-pool]").forEach(im=>{im.src=P(pick(POOL[im.dataset.pool])).replace("w=900",im.className.includes("inset-0")?"w=1600":"w=800")});
+
+  const grid=document.getElementById("galleryGrid"),fb=document.getElementById("filters");
+  const cats=["All",...new Set(GAL.map(g=>g[0]))];
+  let activeCat="All";
+  cats.forEach(c=>{const b=document.createElement("button");b.textContent=c;b.className="filter-btn px-4 py-2 rounded-full border border-slate-700 text-xs font-semibold text-slate-200 hover:border-brand-gold transition"+(c==="All"?" active":"");
+    b.onclick=()=>{activeCat=c;document.querySelectorAll(".filter-btn").forEach(x=>x.classList.toggle("active",x===b));apply()};fb.appendChild(b)});
+  function build(){grid.innerHTML="";shuffle(GAL).forEach(([c,id,cap])=>{
+    const f=document.createElement("figure");f.className="gal-item";f.dataset.cat=c;
+    f.innerHTML='<img loading="lazy" src="'+P(id)+'" alt="'+cap+'"><figcaption class="cap"><span class="text-[10px] uppercase tracking-widest text-brand-gold font-bold">'+c+'</span><p class="text-sm font-heading font-semibold text-white">'+cap+'</p></figcaption>';
+    f.querySelector("img").onerror=()=>f.remove();
+    f.onclick=()=>{lbImg.src=P(id).replace("w=900","w=1600");lb.classList.add("open")};grid.appendChild(f)});apply()}
+  function apply(){grid.querySelectorAll(".gal-item").forEach(f=>f.classList.toggle("hide",activeCat!=="All"&&f.dataset.cat!==activeCat))}
+  
+  const lb=document.getElementById("lightbox"),lbImg=document.getElementById("lbImg");
+  lb.onclick=e=>{if(e.target!==lbImg)lb.classList.remove("open")};
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")lb.classList.remove("open")});
+  document.getElementById("shuffleBtn").onclick=build;build();
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+  const watch=()=>document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el));watch();
+
+  const bar=document.getElementById("scrollBar"),top=document.getElementById("toTop");
+  const secs=[...document.querySelectorAll("section[id]")],links=[...document.querySelectorAll('header nav a[href^="#"]')];
+  addEventListener("scroll",()=>{const h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight);bar.style.width=(p*100)+"%";
+    const show=h.scrollTop>600;top.style.opacity=show?1:0;top.style.pointerEvents=show?"auto":"none";
+    let id="";secs.forEach(s=>{if(s.getBoundingClientRect().top<140)id=s.id});
+    links.forEach(a=>a.classList.toggle("nav-link-active",a.getAttribute("href")==="#"+id))},{passive:true});
+  top.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+  document.addEventListener("error",e=>{const i=e.target;if(i.tagName==="IMG"&&!i.dataset.fb){i.dataset.fb=1;i.removeAttribute("srcset");i.src="data:image/svg+xml;utf8,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F1A36"/><stop offset="1" stop-color="#1D3557"/></linearGradient></defs><rect width="800" height="600" fill="url(#g)"/></svg>')}},true);
+})();
+</script>
